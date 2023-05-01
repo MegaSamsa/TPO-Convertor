@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".SquareTrans">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Convertor.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#AF9164"
+            app:popupTheme="@style/Theme.Convertor.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonPanel"
+        android:orientation="vertical"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/ediInputMetr"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:minHeight="48dp"
+            android:text="Бит" />
+        <EditText
+            android:id="@+id/ediInputMetr2"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:digits="0123456789,."
+            android:text="Байт" />
+        <EditText
+            android:id="@+id/ediInputMetr3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:digits="0123456789,."
+            android:text="Килобайт" />
+        <EditText
+            android:id="@+id/ediInputMetr4"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:digits="0123456789,."
+            android:text="Мегабайт" />
+        <EditText
+            android:id="@+id/ediInputMetr5"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:digits="0123456789,."
+            android:text="Гигабайт" />
+        <EditText
+            android:id="@+id/ediInputMetr6"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:digits="0123456789,."
+            android:text="Терабайт" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TextPanel"
+        android:orientation="vertical"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="350dp"
+        app:layout_constraintLeft_toRightOf="@+id/ButtonPanel">
+        <TextView
+            android:id="@+id/bitText"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="bit"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/BText"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/KBText"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="KB"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/MBText"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="MB"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/GBText"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="GB"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/TBText"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="TB"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
